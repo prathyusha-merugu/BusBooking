@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bus Booking System</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #0077cc;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #005fa3;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 15px;
+            font-weight: bold;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .booking-form {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .booking-form h2 {
+            text-align: center;
+        }
+
+        .booking-form input,
+        .booking-form select,
+        .booking-form button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+        }
+
+        .booking-form button {
+            background-color: #0077cc;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        .booking-form button:hover {
+            background-color: #005fa3;
+        }
+
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 12px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Online Bus Booking</h1>
+        <p>Book Your Journey Easily</p>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Routes</a>
+        <a href="#">Bookings</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <div class="container">
+
+        <div class="booking-form">
+            <h2>Bus Ticket Booking</h2>
+
+            <form>
+                <label>From</label>
+                <input type="text" placeholder="Enter source city" />
+
+                <label>To</label>
+                <input type="text" placeholder="Enter destination city" />
+
+                <label>Travel Date</label>
+                <input type="date" />
+
+                <label>Bus Type</label>
+                <select>
+                    <option>AC Sleeper</option>
+                    <option>Non-AC Sleeper</option>
+                    <option>Seater</option>
+                    <option>Luxury Coach</option>
+                </select>
+
+                <label>Number of Passengers</label>
+                <input type="number" min="1" max="10" />
+
+                <button type="submit">Search Buses</button>
+            </form>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>© 2026 Bus Booking System | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
